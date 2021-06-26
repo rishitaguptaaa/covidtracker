@@ -54,9 +54,10 @@ header{
     display: flex;
     align-items: center;
     padding-left: 20px;
+    padding-top: 0px;
 }
 .logo img{
-    width: 60px;
+    width: 40px;
 }
 .logo p{
     font-weight: bold;
@@ -80,6 +81,10 @@ nav ul li a{
     color: black;
     padding: 10px;
 }
+nav ul li a:hover{
+    color: lightgrey;
+    transition: all 0.3s ease;
+}
 
 /* MAIN */
 main{
@@ -89,6 +94,8 @@ main{
 }
 .close{
     padding: 20px ;
+    color: black;
+    cursor: pointer;
 }
 .latest-reports{
     display: flex;
@@ -154,7 +161,7 @@ main{
     justify-content: space-between;
     width: 400px;
     height: 30px;
-    background-color: rosybrown;
+    background-color: blueviolet;
     padding-left: 15px;
     font-size: 1.1em;
 }
@@ -184,23 +191,25 @@ main{
     color: slategray;
 }
 .country-list ul li:hover{
-    border-left: 1px solid slategray;
+    border-left: 1px solid ghostwhite;
+    color: honeydew;
 }
 /* SCROLL BAR */
 .country-list::-webkit-scrollbar{
     width: 10px;
+    height: 10px;
 }
 /* TRACK */
 .country-list::-webkit-scrollbar-track{
-    background: snow;
+    background: black;
 }
 /* HANDLE */
 .country-list::-webkit-scrollbar-thumb{
-    background: thistle;
+    background: lightgrey;
 }
 /* HANDLE ON HOVER */
 .country-list::-webkit-scrollbar-thumb:hover{
-    background: tomato;
+    background: grey;
 }
 
 /* FOOTER */
@@ -219,6 +228,7 @@ footer{
     height: 100%;
     display: flex;
     justify-content: center;
+    background-color: blueviolet;
 }
 .copyright{
     height: 100%;
@@ -229,7 +239,11 @@ footer{
 .copyright p{
     color: black;
     align-self: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.copyright img{
+    height: 50px;
+    align-self: center;
 }
 
 @media screen and (max-width: 600px) {
