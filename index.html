@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>COVID-19 Tracker</title>
+    <link rel="shortcut icon" type="image/jpg" href="./its corona outside.gif"/>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./its corona outside.gif" alt="Stay safe ist Covid outside">
+            <p>COVID - 19 <br /> Stats </p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.google.com/search?q=covid+stats&rlz=1C1RLNS_enIN912IN912&oq=covid+stats&aqs=chrome..69i57j0i402l2j0i10i433l2j0i10j0i10i433j0i10j0i10i433j0.2694j0j7&sourceid=chrome&ie=UTF-8">More Details</a>
+                </li>
+                <li>
+                    <a href="https://rishitaguptaaa.github.io/RishitaPortfolio/">About the creator</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="stats">
+            <div class="latest-reports">
+                <div class="country">
+                    <div class="name"> Loading ...</div>
+                    <div class="change-country">Change</div>
+                    <div class="search-country hide">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search Country..."/>
+                        <div class="close"><i class="far fa-times-circle"></i></div>
+                    </div>
+                    <div class="country-list"></div>
+                </div>
+                </div>
+            <div class="total-cases">
+                <div class="title">Total Cases</div>
+                <div class="value">0</div>
+                <div class="new-value">+0</div>
+            </div>
+            <div class="recovered">
+                <div class="title">Recovered</div>
+                <div class="value">0</div>
+                <div class="new-value">+0</div>
+            </div>
+            <div class="deaths">
+                <div class="title">Deaths</div>
+                <div  class="value">0</div>
+                <div class="new-value">+0</div>
+            </div>
+            </div>
+            <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>Created By - Rishita Gupta</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"></script>
+    <script src="./countries.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
